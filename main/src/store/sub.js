@@ -32,7 +32,7 @@ async function loadApp(urls, name, csslist) {
   await createScript(urls[0])
   await createScript(urls[1])
 
-  if (csslist.length) {
+  if (csslist && csslist.length) {
     await createCss(csslist[0]);
   }
   // 取消loading
@@ -47,6 +47,8 @@ export const subNavList = [
     activeWhen: () => {},
     customProps: {},
   },
+  // todo
+  //react16报错 Uncaught SyntaxError: Unexpected token '<' (at undefined:1:1)
   {
     name: 'react16',
     app: loadApp([
@@ -66,13 +68,14 @@ export const subNavList = [
     activeWhen: location => location.pathname.startsWith('/vue2'),
     customProps: {},
   },
-  {
-    name: 'vue3',
-    app: loadApp([
-      'http://localhost:9005/static/js/chunk-vendors.js',
-      'http://localhost:9005/vue3.js',
-    ], 'vue3'),
-    activeWhen: location => location.pathname.startsWith('/vue3'),
-    customProps: {},
-  },
+  // todo 打开
+  // {
+  //   name: 'vue3',
+  //   app: loadApp([
+  //     'http://localhost:9005/static/js/chunk-vendors.js',
+  //     'http://localhost:9005/vue3.js',
+  //   ], 'vue3'),
+  //   activeWhen: location => location.pathname.startsWith('/vue3'),
+  //   customProps: {},
+  // },
 ]

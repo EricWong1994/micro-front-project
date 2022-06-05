@@ -25,9 +25,16 @@ class BasicMap extends React.Component {
         <Route path="/video" component={Video}/>
         {/* 视频最终页 */}
         <Route path="/video-last" component={VideoLast}/>
+        <Route path="/" component={Home}/>
       </Router>
     )
   }
+}
+
+function Home() {
+  return <div>
+    home
+  </div>
 }
 
 export default BasicMap

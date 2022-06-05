@@ -2,8 +2,10 @@ const childProcess = require('child_process')
 const path = require('path')
 
 const filePath = {
+  service: path.join(__dirname, '../service'),
   vue2: path.join(__dirname, '../vue2'),
-  vue3: path.join(__dirname, '../vue3'),
+  // todo 打开
+  // vue3: path.join(__dirname, '../vue3'),
   react15: path.join(__dirname, '../react15'),
   react16: path.join(__dirname, '../react16'),
   main: path.join(__dirname, '../main')
