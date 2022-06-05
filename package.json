@@ -1,0 +1,21 @@
+{
+  "name": "micro-web-project",
+  "version": "1.0.0",
+  "description": "create micro project for myself",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build/run.js"
+  },
+  "author": "yancy",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/cli-plugin-eslint": "^5.0.4",
+    "@vue/cli-service": "^5.0.4",
+    "cross-env": "^7.0.3",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "eslint": "^8.17.0"
+  }
+}
